@@ -5,5 +5,5 @@ import (
 )
 
 func MigrateModels(db *gorm.DB) {
-	db.AutoMigrate(&Test{})
+	db.AutoMigrate(&Test{}, &Post{})
 }
